@@ -1,5 +1,5 @@
 # Site settings
-title: HL Blog
+title: lotus blog
 SEOTitle: 海龙的博客 | HL Blog
 header-img: img/post-bg-desk.jpg
 email: whllotus@qq.com
@@ -11,7 +11,7 @@ github_repo: "https://github.com/lotuswhl/lotuswhl.github.io.git" # you code rep
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "life without learning is so so boring"
+sidebar-about-description: "life without learning is so so boring."
 sidebar-avatar: /img/about-HL-gentle.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
