@@ -4,7 +4,7 @@ title:      how to choose a machine learning classifier
 subtitle:   
 date:       2017-12-13
 author:     HL
-header-img: img/machine-learning-classifier.jpg
+header-img: img/machine-learning-classifier.jpeg
 catalog: true
 tags:
     - machine learning

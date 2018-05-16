@@ -4,7 +4,7 @@ title:      support vector machines
 subtitle:   
 date:       2018-01-08
 author:     HL
-header-img: img/svm-first.png
+header-img: img/svm-first.jpg
 catalog: true
 tags:
     - machine learning
