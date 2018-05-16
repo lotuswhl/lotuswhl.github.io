@@ -57,13 +57,13 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
+# disqus_username: lotuswhl
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 7b934ee325496581dada                            #生成的clientID
-  clientSecret: f5c03a54ccb5ec67cd78dcd3b3a974e1c542f5ae    #生成的clientSecret
+  clientID: 0081b5dd2db1dbde6538                            #生成的clientID
+  clientSecret: 160854bb6cc5986d17d7ce005d632fc332ddc61d    #生成的clientSecret
   repo: lotuswhl.github.io    #仓库名称
   owner: lotuswhl    #github用户名
   admin: lotuswhl
