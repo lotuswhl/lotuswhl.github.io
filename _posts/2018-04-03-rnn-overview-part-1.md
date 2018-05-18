@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      recurrent neural networks an overview
-subtitle:   关于RNN的系统探索
+title:      Recurrent Neural Networks an overview - part 1
+subtitle:   RNN overview 系列之(概要)与(介绍)
 date:       2018-04-03
 author:     HL
 header-img: img/rnn-lstm.png

@@ -100,10 +100,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "lotuswhl csdn blog",
+        title: "-> 我的CSDN博客",
         href: "https://blog.csdn.net/dragonboss2016"
     },{
-        title: "lotuswhl wordpress blog",
+        title: "-> 我的wordpress博客",
         href: "https://lotuswhl.wordpress.com"
     }
 ]
