@@ -4,7 +4,7 @@ title:      A little understanding about Neural Networks
 subtitle:   thinking changes who you are
 date:       2018-01-03
 author:     HL
-header-img: img/questions-upon-machine-learning.png
+header-img: img/neural-networks.jpg
 catalog: true
 tags:
     - deep learning
