@@ -107,3 +107,5 @@ friends: [
         href: "https://lotuswhl.wordpress.com"
     }
 ]
+
+theme: jekyll-theme-cayman
