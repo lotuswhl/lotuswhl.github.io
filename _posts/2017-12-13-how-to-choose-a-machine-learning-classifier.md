@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      how to choose a machine learning classifier
-subtitle:   
+subtitle:   简单的思考，来源于国外的一篇文章
 date:       2017-12-13
 author:     HL
 header-img: img/machine-learning-classifier.jpeg

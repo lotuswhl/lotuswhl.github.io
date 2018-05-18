@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      questions upon machine learning
-subtitle:   
+subtitle:   思考问题有利于真正的成长
 date:       2018-01-03
 author:     HL
 header-img: img/questions-upon-machine-learning.png
