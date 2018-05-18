@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      关于神经网络的一点点理解
+title:      A little understanding about Neural Networks
 subtitle:   thinking changes who you are
 date:       2018-01-03
 author:     HL
