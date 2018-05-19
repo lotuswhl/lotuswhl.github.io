@@ -18,4 +18,4 @@ tags:
 # 意图机制用于解决什么样的问题
 一个机制的存在或者一个方法的存在必然是用于解决某类或者某些类问题的.一个非常典型的应用就是Neural Machine Translation(NMT).  
 在早期的机器翻译系统中,通常加入了大量的人工特征工程,也就是加入了很多的静态统计信息.这样的系统泛化能力往往比较差,也就是对于新的数据的适应能力比较差.而神经机器翻译NMT却有着更好的泛化能力.一个典型的NMT通常是由RNN或者LSTM等循环神经网络将一条语句进行编码为一个输出向量和一个解码器(通常也是RNN)构成.基于对编码器可以编码整条语句信息的假设,我们先将语句转为embedding然后在从这个embedding中提取信息,进行解码,解码的过程也就是翻译的过程.典型示图如下:
-![NMT sample](https://github.com/lotuswhl/lotuswhl.github.io/blob/master/img/attention/NMT-Sample.png)
+![NMT sample](https://raw.githubusercontent.com/lotuswhl/lotuswhl.github.io/master/img/attention/NMT-Sample.png)
