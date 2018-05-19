@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      questions upon machine learning
+title:      关于机器学习的几个问题
 subtitle:   思考问题有利于真正的成长
 date:       2018-01-03
 author:     HL

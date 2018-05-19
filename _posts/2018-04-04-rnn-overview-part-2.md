@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Recurrent Neural Networks an overview - part 2
+title:      循环神经网络概览系列之 - part 2
 subtitle:   RNN overview 系列之(背景)
 date:       2018-04-04
 author:     HL

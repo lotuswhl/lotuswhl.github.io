@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      how to choose a machine learning classifier
+title:      如何选择一个合适的机器学习分类器
 subtitle:   简单的思考，来源于国外的一篇文章
 date:       2017-12-13
 author:     HL
