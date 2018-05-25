@@ -13,7 +13,7 @@ tags:
 ---
 
 # 介绍
-这一章节将会简单的介绍下RNN的初始版本,以及他的历史及各种演化.关于RNN,我在wordpress上写过一篇初探性的文章,建议先阅读它,[See](https://lotuswhl.wordpress.com/2018/05/12/rnn-%e5%be%aa%e7%8e%af%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%88%9d%e6%8e%a2/?target="_blank")再简单阅读下面的内容,因为我会跳过其最基础的东西.
+这一章节将会简单的介绍下RNN的初始版本,以及他的历史及各种演化.关于RNN,我在wordpress上写过一篇初探性的文章,建议先阅读它,<a href="https://lotuswhl.wordpress.com/2018/05/12/rnn-%e5%be%aa%e7%8e%af%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e5%88%9d%e6%8e%a2/" target="_blank">See</a>再简单阅读下面的内容,因为我会跳过其最基础的东西.
 
 # 早期的RNN设计问题
 早期的RNN的设计也是有着很多的历史原因的,实际上RNN的设计灵感来源于Hopfiled 网络.具体的我并没有去了解,但是他大概解决了一些模式识别的问题,尤其是对于倒塌的模式中回复模型的问题.后期Boltzmann Machine 和 Auto-encoder也是来自于他. RNN的设计来自于他的改进版,也就是使用固定权重来解决序列问题的模型,RNN则使用了一个自循环的连接,用来解决长期依赖的问题.
