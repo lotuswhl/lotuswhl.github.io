@@ -1,5 +1,5 @@
 # Site settings
-title: lotus blog
+title: HL BLOG
 SEOTitle: 海龙的博客 | HL Blog
 header-img: img/post-bg-desk.jpg
 email: whllotus@qq.com
@@ -104,7 +104,7 @@ friends: [
         href: "https://blog.csdn.net/dragonboss2016"
     },{
         title: "-> 我的wordpress博客",
-        href: "https://lotuswhl.wordpress.com"
+        href: "https://lotuswhl.com"
     }
 ]
 
