@@ -1,6 +1,6 @@
 {
-  "name": "HL Blog",
-  "short_name": "HL Blog",
+  "name": "Mastering Artificial Intelligence",
+  "short_name": "Mastering Artificial Intelligence",
   "description": "A personal blog by engineer",
   "icons": [{
     "src": "icons/pwa_icon_128.png",
