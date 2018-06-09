@@ -58,23 +58,23 @@ C 字符串 | SDS
  ```c
 
 sds sdsnewlen(const void *init, size_t initlen);
-// 创建一个包含C字符串的SDS  
+/*创建一个包含C字符串的SDS */ 
 sds sdsnew(const char *init);
-// 创建一个SDS空字符串  
+/* 创建一个SDS空字符串 */ 
 sds sdsempty(void);
-// 创建一个SDS字符串的副本  
+/* 创建一个SDS字符串的副本 */
 sds sdsdup(const sds s);
-// 释放资源  
+/* 释放资源  */
 void sdsfree(sds s);
-// 使用空字符来扩容  
+/* 使用空字符来扩容*/
 sds sdsgrowzero(sds s, size_t len);
 sds sdscatlen(sds s, const void *t, size_t len);
-// 拼接给定的C字符串    
+/* 拼接给定的C字符串 */   
 sds sdscat(sds s, const char *t);
-// 拼接给定的SDS字符串  
+/* 拼接给定的SDS字符串*/  
 sds sdscatsds(sds s, const sds t);
 sds sdscpylen(sds s, const char *t, size_t len);
-// * 拷贝覆盖  
+/* 拷贝覆盖*/  
 sds sdscpy(sds s, const char *t);
 
 sds sdscatvprintf(sds s, const char *fmt, va_list ap);
@@ -86,14 +86,14 @@ sds sdscatprintf(sds s, const char *fmt, ...);
 #endif
 
 sds sdscatfmt(sds s, char const *fmt, ...);
-// 从SDS字符串的前后两端移除在给定C字符串中的字符  
+/*从SDS字符串的前后两端移除在给定C字符串中的字符  */
 sds sdstrim(sds s, const char *cset);
-// 只保留range范围内的字符，不然范围内的会被清除或者覆盖  
+/* 只保留range范围内的字符，不然范围内的会被清除或者覆盖  */
 void sdsrange(sds s, ssize_t start, ssize_t end);
 void sdsupdatelen(sds s);
-// 清空SDS保存的字符串的内容O(1),惰性释放  
+/* 清空SDS保存的字符串的内容O(1),惰性释放*/  
 void sdsclear(sds s);
-// 比较两个SDS字符串  
+/* 比较两个SDS字符串*/  
 int sdscmp(const sds s1, const sds s2);
 sds *sdssplitlen(const char *s, ssize_t len, const char *sep, int seplen, int *count);
 void sdsfreesplitres(sds *tokens, int count);
