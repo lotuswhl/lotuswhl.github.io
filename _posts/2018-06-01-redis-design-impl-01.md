@@ -12,7 +12,7 @@ tags:
 ---
 # 简单动态字符串(Simple Dynamic String)
 ## SDS的基本数据结构
-```c++
+```c
 /* Note: sdshdr5 is never used, we just access the flags byte directly.
  * However is here to document the layout of type 5 SDS strings. */
 struct __attribute__ ((__packed__)) sdshdr5 {
@@ -44,6 +44,7 @@ struct __attribute__ ((__packed__)) sdshdr64 {
     char buf[];
 };
 ```
+
 ## SDS 与 C语言的字符串的比较
 
 |C 字符串 | SDS|
@@ -54,7 +55,7 @@ struct __attribute__ ((__packed__)) sdshdr64 {
 | 只能保存文本数据 | 可以保存文本数据或者二进制数据|
 | 可以使用<string.h> 中的所有库函数 | 可以使用<string.h>中的部分库函数|
 
- ## SDS不完全API
+## SDS不完全API
  ```c
 
 sds sdsnewlen(const void *init, size_t initlen);
@@ -122,7 +123,7 @@ void *sds_realloc(void *ptr, size_t size);
 void sds_free(void *ptr);
  ```
 
- ## SDS的重点
+## SDS的重点
 * 通常而言Redis只会使用C的字符串作为字面值常量，大多数情况下使用自己的SDS来表示字符串。
 * 比起C的字符串，SDS的优点：
     1. 常熟复杂度的字符串长度获取
