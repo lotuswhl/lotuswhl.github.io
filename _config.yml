@@ -62,8 +62,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 52f81dce5f5772e1d62a                            #生成的clientID
-  clientSecret: c25b9d7134c4115b259efece2347c5f8aaa85625    #生成的clientSecret
+  clientID: 730f876a9628d0eaaa80                            #生成的clientID
+  clientSecret: 2a18db852792d846159a4ef14760c68a7c8a6517    #生成的clientSecret
   repo: lotuswhl.github.io    #仓库名称
   owner: lotuswhl    #github用户名
   admin: lotuswhl
