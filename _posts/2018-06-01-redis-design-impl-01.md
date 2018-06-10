@@ -12,7 +12,7 @@ tags:
 ---
 # 简单动态字符串(Simple Dynamic String)
 ## SDS的基本数据结构
-```c
+```
 /* Note: sdshdr5 is never used, we just access the flags byte directly.
  * However is here to document the layout of type 5 SDS strings. */
 struct __attribute__ ((__packed__)) sdshdr5 {
@@ -46,13 +46,13 @@ struct __attribute__ ((__packed__)) sdshdr64 {
 ```
 ## SDS 与 C语言的字符串的比较
 
-C 字符串 | SDS
+|C 字符串 | SDS|
 ---------|----------
- O(N)获取字符串的长度 | O(1)获取字符串的长度 
- API不安全，会造成缓冲区溢出 | API安全，不会导致缓冲区溢出 
- N次修改字符串长度会导致N次内存重新分配 | N次修改字符串长度最多N次内存重新分配
- 只能保存文本数据 | 可以保存文本数据或者二进制数据
- 可以使用<string.h> 中的所有库函数 | 可以使用<string.h>中的部分库函数
+| O(N)获取字符串的长度 | O(1)获取字符串的长度 |
+| API不安全，会造成缓冲区溢出 | API安全，不会导致缓冲区溢出 |
+| N次修改字符串长度会导致N次内存重新分配 | N次修改字符串长度最多N次内存重新分配|
+| 只能保存文本数据 | 可以保存文本数据或者二进制数据|
+| 可以使用<string.h> 中的所有库函数 | 可以使用<string.h>中的部分库函数|
 
  ## SDS不完全API
  ```c
