@@ -1,7 +1,7 @@
 
-# forked from qiubaiying/qiubaiying.github.io
+> _modified from --> qiubaiying/qiubaiying.github.io_
 
-## you can fork this repo if you want,but I suggest you go to the original repo and follow the tutorial there.
+> _**you can fork this repo if you want,but I suggest you go to the original repo and follow the tutorial there.**_
 
-# good luck!
+> _**good luck!**_
 
