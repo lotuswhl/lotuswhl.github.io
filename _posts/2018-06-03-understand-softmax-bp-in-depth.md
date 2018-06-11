@@ -26,11 +26,12 @@ $$L = \sum_{j=1}^N{-t_j\log{o_j}}$$
 
 # 推导
 ## 简单的二分类问题softmax forward示例
+### forward
 ![softmax forward 实例](https://raw.githubusercontent.com/lotuswhl/lotuswhl.github.io/master/img/understanding/softmax-forward-demo.png)
 
-> 图中假设h1,h2,h3为网络的输入，y1,y2表示的输出层的输出值，而o1,o2则是softmax函数的计算结果，最后的L是损失值。
+> 图中假设h1,h2,h3为网络的输入，y1,y2表示的输出层的输出值，而o1,o2则是softmax函数的计算结果，最后的L是损失值。  
 
-### forward
+
 根据图示我们可以得到以下forward公式:  
 
 $$L=-t_1\log{o_1}-t_2\log{o_2}$$  
@@ -57,7 +58,7 @@ $$\frac{\partial{L}}{\partial{o_2}}=-\frac{t_2}{o_2} $$
 $$\frac{\partial{o_1}}{\partial{y_1}}=\frac{e^{y_1}{\sum_{i=1}^2{e^{y_i}}}}{(\sum_{i=1}^2{e^{y_i}})^2}-\frac{e^{y_1}e^{y_1}}{(\sum_{i=1}^2{e^{y_i}})^2}=o_1-o_1^2$$  
 
 $$\frac{\partial{o_2}}{\partial{y_1}}=-o_2o_1$$  
-  
+
 $$\frac{\partial{y_1}}{\partial{w_{21}}}=h_2$$  
 
 最后就可以使用链式法则将他们拼接到一起了。具体的式子很简单这里就不列了。
