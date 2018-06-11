@@ -31,12 +31,17 @@ $$L = \sum_{j=1}^N{-t_j\log{o_j}}$$
 > 图中假设h1,h2,h3为网络的输入，y1,y2表示的输出层的输出值，而o1,o2则是softmax函数的计算结果，最后的L是损失值。
 
 ### forward
-根据图示我们可以得到以下forward公式:
+根据图示我们可以得到以下forward公式:  
+
 $$L=-t_1\log{o_1}-t_2\log{o_2}$$  
-$$o_1=\frac{e^{y_1}}{\sum_{i=1}^2{e^{y_i}}}$$  
+
+$$o_1=\frac{e^{y_1}}{\sum_{i=1}^2{e^{y_i}}}$$   
+
 $$o_2=\frac{e^{y_2}}{\sum_{i=1}^2{e^{y_i}}}$$  
+
 $$y_1=w_{11}h_1+w_{21}h_2+w_{31}h_3$$  
-$$y_2=w_{12}h_1+w_{22}h_2+w_{32}h_3$$  
+
+$$y_2=w_{12}h_1+w_{22}h_2+w_{32}h_3$$    
 
 ### backward
 假如我们要计算损失L对W21的梯度: 
@@ -44,10 +49,15 @@ $$y_2=w_{12}h_1+w_{22}h_2+w_{32}h_3$$
 ![softmax backward](https://raw.githubusercontent.com/lotuswhl/lotuswhl.github.io/master/img/understanding/softmax-bp-demo.png)  
 
 我们可以进行如下计算:  
+
 $$\frac{\partial{L}}{\partial{o_1}}=-\frac{t_1}{o_1} $$  
+
 $$\frac{\partial{L}}{\partial{o_2}}=-\frac{t_2}{o_2} $$  
+
 $$\frac{\partial{o_1}}{\partial{y_1}}=\frac{e^{y_1}{\sum_{i=1}^2{e^{y_i}}}}{(\sum_{i=1}^2{e^{y_i}})^2}-\frac{e^{y_1}e^{y_1}}{(\sum_{i=1}^2{e^{y_i}})^2}=o_1-o_1^2$$  
+
 $$\frac{\partial{o_2}}{\partial{y_1}}=-o_2o_1$$  
+  
 $$\frac{\partial{y_1}}{\partial{w_{21}}}=h_2$$  
 
 最后就可以使用链式法则将他们拼接到一起了。具体的式子很简单这里就不列了。
