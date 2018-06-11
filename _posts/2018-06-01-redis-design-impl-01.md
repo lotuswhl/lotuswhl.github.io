@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Understanding Softmax loss function backpropagation In Depth
+title:      Mastering redis - part1
 subtitle:   形象思考与数学推理
 date:       2018-06-03
 author:     HL
