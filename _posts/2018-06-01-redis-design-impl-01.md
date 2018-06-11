@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      Mastering redis - part1
-subtitle:   形象思考与数学推理
-date:       2018-06-03
+subtitle:   数据结构与对象
+date:       2018-06-01
 author:     HL
 header-img: img/redis/redis-bg.jpeg
 catalog: true
