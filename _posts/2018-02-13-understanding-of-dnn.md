@@ -8,7 +8,7 @@ header-img: img/neural-networks.jpg
 catalog: true
 tags:
     - deep learning
-    - thinking
+    - understanding
 ---
 
 ## 关于神经网络
