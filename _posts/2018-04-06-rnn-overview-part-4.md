@@ -27,6 +27,7 @@ tags:
 * 一个内部状态Cell State ($\bf S$).
 
 ## LSTM公式如下:  
+  
 $$i_t=\delta(W_i[x_t,h_{t-1}]+b_i)$$  
 
 $$g_t=\tanh(W_g[x_t,h_{t-1}]+b_g)$$  
@@ -36,7 +37,7 @@ $$f_t=\delta(W_f[x_t,h_{t-1}]+b_f)$$
 $$o_t=\delta(W_o[x_t,h_{t-1}]+b_o)$$  
 
 $$c_t=f_t*c_{t-1}+g_t*i_t$$   
-   
+
 $$h_t=\tanh(c_t)*o_t$$  
 
 
