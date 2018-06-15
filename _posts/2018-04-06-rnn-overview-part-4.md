@@ -26,7 +26,19 @@ tags:
 * 三个门一个信息输入，输入门input gate，遗忘门forget gate，输出门output gate，以及信息输入input。他们都有着同样的输入$x_t$ and $h_{t-1}$.
 * 一个内部状态Cell State ($\bf S$).
 
-关于LSTM的构成公式这里不再列出，欢迎查看<a href="https://lotuswhl.wordpress.com/2018/05/17/%e7%90%86%e8%a7%a3lstm/" target="_blank">我的wordpress博客-LSTM</a>博客。
+## LSTM公式如下:  
+$$i_t=\delta(W_i[x_t,h_{t-1}]+b_i)$$  
+
+$$g_t=\tanh(W_g[x_t,h_{t-1}]+b_g)$$  
+
+$$f_t=\delta(W_f[x_t,h_{t-1}]+b_f)$$  
+
+$$o_t=\delta(W_o[x_t,h_{t-1}]+b_o)$$  
+
+$$c_t=f_t*c_{t-1}+g_t*i_t$$   
+   
+$$h_t=\tanh(c_t)*o_t$$  
+
 
 ## LSTM内容补充
 实际上我们会发现，如果输入门和输出门都关闭的话，那么会发生什么？信息将会保存在内部状态Cell State中！然后，这些信息不会丢失，也不会对当前的输出造成影响！(**注意，这里的保留信息或者门的关闭，指的是局部的信息！也可能是全部，所以门的闭合可以针对特定部分的数据。**)。
