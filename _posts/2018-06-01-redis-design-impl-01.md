@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Mastering redis - part1
+title:      redis 设计与实现- part1
 subtitle:   数据结构与对象
 date:       2018-06-01
 author:     HL
@@ -134,3 +134,33 @@ void sds_free(void *ptr);
 
 
 # 链表
+
+listNode结构：
+```c
+typedef struct listNode {
+    struct listNode *prev;
+    struct listNode *next;
+    void *value;
+} listNode;
+```
+list结构：
+```c
+typedef struct list {
+    listNode *head;
+    listNode *tail;
+    void *(*dup)(void *ptr);
+    void (*free)(void *ptr);
+    int (*match)(void *ptr, void *key);
+    unsigned long len;
+} list;
+```
+**在C语言中，因为没有面向对象的概念，因此对list的操作皆需要外部函数来实现，因此redis也提供了很多便捷的list操作函数**
+
+## list的重点
+* 链表广泛运用于redis的各种功能实现
+* redist的listNode结构实现双端链表
+* 每个链表list由表头、表尾以及长度信息构成
+* redis实现的无环链表
+* redis的链表存储void指针，并且可以通过设置不同类型的操作函数将其用于保存不同类型的值
+
+<script src="https://gist.github.com/hilongwu/4352e8737023da221b8bf101532870f4.js"></script>
