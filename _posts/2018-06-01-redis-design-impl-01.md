@@ -163,4 +163,3 @@ typedef struct list {
 * redis实现的无环链表
 * redis的链表存储void指针，并且可以通过设置不同类型的操作函数将其用于保存不同类型的值
 
-<script src="https://gist.github.com/hilongwu/4352e8737023da221b8bf101532870f4.js"></script>
